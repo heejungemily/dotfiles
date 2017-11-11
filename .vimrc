@@ -1,4 +1,2 @@
 set number
-colo default
-
-
+colo desert
