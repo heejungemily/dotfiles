@@ -1,0 +1,6 @@
+# Make Tab autocomplete regardless of filename case
+set completion-ignore-case on
+
+# List all matches in case of multiple possible completions
+set show-all-if-ambiguous on
+

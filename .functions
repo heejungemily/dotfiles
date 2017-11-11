@@ -1,0 +1,39 @@
+# Create a new directory and enter it
+function mk() {
+  mkdir -p "$a" && cd "$@"
+}
+
+# Open manual page as PDf
+function manpdf() {
+  man -t "${1}" | open -f -a /Applications/Preview.app/
+}
+
+# no args - opens current directory in Sublime Text
+# with args - opens the given location
+function s() {
+  if [$# -eq 0]; then
+    subl .;
+  else 
+    subl "$@";
+  fi;
+}
+
+# no args - opens current directory in Vim
+# with args - opens the given location
+function v() {
+  if [$# -eq 0]; then
+    vim .;
+  else 
+    vim "$@";
+  fi;
+}
+
+# no args - opens current directory
+# with args - opens the given location
+function o() {
+  if [$# -eq 0]; then
+    open .;
+  else 
+    open "$@";
+  fi;
+}
