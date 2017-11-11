@@ -1,1 +1,4 @@
 set number
+colo default
+
+
